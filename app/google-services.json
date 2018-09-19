@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "476777606634",
+    "firebase_url": "https://egychat2-37801.firebaseio.com",
+    "project_id": "egychat2-37801",
+    "storage_bucket": "egychat2-37801.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:476777606634:android:457b4605c08c102f",
+        "android_client_info": {
+          "package_name": "com.example.documents.egychat2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "476777606634-ps4d35bubl4sglg99ah32788vunl8804.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJBS699ErN6y0SMVmD-Fcg6NLd-UUX5kI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
