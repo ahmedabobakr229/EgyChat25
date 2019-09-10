@@ -1,4 +1,4 @@
-package com.example.documents.egychat2;
+package com.example.documents.egychat2.Auth_System;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.example.documents.egychat2.R;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
@@ -21,8 +22,8 @@ public class Signin extends AppCompatActivity {
         setContentView(R.layout.welcome);
 
         mAuth = FirebaseAuth.getInstance();
-        signout = (Button)findViewById(R.id.signout);
-        username = (TextView)findViewById(R.id.tvname);
+        signout = findViewById(R.id.signout);
+        username = findViewById(R.id.tvname);
 
         if (mAuth.getCurrentUser() == null){
             finish();

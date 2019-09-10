@@ -1,64 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#68e696"
-    tools:context=".Settings">
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Settings_Pakage.Settings">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/setting_img_btn"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="#000"
+            android:text="change image"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/setting_status_btn"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#000"
+            android:text="change status"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/setting_all_users"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#000"
+            android:text="All Users"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/setting_logout"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#000"
+            android:text="Logout"
+            android:textColor="#fff" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/settings_display_statue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/setting_display_name"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:text="Default status" />
 
     <TextView
         android:id="@+id/setting_display_name"
-        android:layout_width="122dp"
+        android:layout_width="wrap_content"
         android:layout_height="38dp"
-        android:layout_centerInParent="true"
         android:text="Name"
         android:gravity="center"
         android:textStyle="bold"
         android:textColor="#000"
         android:textSize="24sp" />
 
-    <TextView
-        android:id="@+id/editText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="238dp"
-        android:ems="10"
-        android:gravity="center"
-        android:inputType="textPersonName"
-        android:text="Default status" />
 
     <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/settings_image"
         android:layout_width="203dp"
         android:layout_height="191dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="46dp"
-        android:src="@drawable/user"
-        android:id="@+id/settings_image"/>
+        android:src="@drawable/user" />
 
-    <Button
-        android:id="@+id/setting_img_btn"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="121dp"
-        android:textColor="#fff"
-        android:background="#000"
-        android:text="change image" />
-    <Button
-        android:id="@+id/setting_status_btn"
-        android:layout_width="148dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="63dp"
-        android:textColor="#fff"
-        android:background="#000"
-        android:text="change status" />
 
-</RelativeLayout>
+</LinearLayout>
